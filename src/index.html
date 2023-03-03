@@ -1,13 +1,39 @@
-<!doctype html>
-<html lang="en">
+<!DOCTYPE html>
+<html ng-app="myApp">
 <head>
-  <meta charset="utf-8">
-  <title>Angular Quickstart</title>
-  <base href="/">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="icon" type="image/x-icon" href="favicon.ico">
+	<meta charset="UTF-8">
+	<title>Single Page Website</title>
+	<link rel="stylesheet" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
 </head>
 <body>
-  <app-root></app-root>
+	<div class="wrapper" ng-controller="myCtrl">
+		<nav>
+			<ul>
+				<li><a href="#home">Home</a></li>
+				<li><a href="#about">About</a></li>
+				<li><a href="#events">Events</a></li>
+				<li><a href="#contact">Contact</a></li>
+			</ul>
+		</nav>
+		<div id="home" class="section">
+			<div class="overlay">
+				<h1>Department of CSE, EXCEL</h1>
+			</div>
+		</div>
+		<div id="about" class="section">
+			<h2>About</h2>
+			<p>This is the about section.</p>
+		</div>
+		<div id="events" class="section">
+			<h2>Events</h2>
+			<p>This is the events section.</p>
+		</div>
+		<div id="contact" class="section">
+			<h2>Contact</h2>
+			<p>This is the contact section.</p>
+		</div>
+	</div>
+	<script src="app.js"></script>
 </body>
 </html>
